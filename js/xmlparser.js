@@ -43,7 +43,7 @@ var XMLParser = (function() {
 	    span += (new Array(level * 4 + 1).join('&nbsp;')) + 
 			    '<span class="tag tag-open ' + cls + '" data-tag="' + cls + '">&lt;' + 
 			    node.nodeName + getAttrs(node) + 
-			    (hasContent(node) ? '<span class="tag ' + cls + '" data-tag="' + cls + '">&gt;</span>' : '') + '</span>';
+			    '<span class="tag ' + cls + '" data-tag="' + cls + '">&gt;</span></span>';
 		
 		if (node.childElementCount) span += '\n';
 		else {
